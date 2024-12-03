@@ -172,7 +172,7 @@ helm upgrade --install dapr dapr/dapr \
 
 ## Ephemeral Storage
 
-When running in non-HA mode, Scheduler can be optionally made to use Ephemeral storage, which is in-memory storage that is **not** resilient to restarts, i.e. all Job data will be lost after a Scheduler restart.
+When running in non-HA mode, Scheduler can be optionally made to use Ephemeral storage, which is in-memory storage that is **not** resilient to restarts. For example, all Job data will be lost after a Scheduler restart.
 This is useful for non-production deployments where storage is not available or required, or for testing purposes.
 
 {{% alert title="Note" color="primary" %}}
